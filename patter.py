@@ -29,4 +29,6 @@ print(mat_Update)
 arr_test = np.flipud(np.transpose(np.matrix(mat_Update))).tolist()
 
 for i in arr_test:
-    print('\t'.join(map(str, i)))
+#     print('\t'.join(map(str, i)))
+    print(' '.join([str(elem) for elem in i]))
+
