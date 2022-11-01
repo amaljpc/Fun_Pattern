@@ -6,15 +6,12 @@ from numpy import matrix
 os.system("clear")
 
 arr = [5,3,4,1]
-columns = max(arr)
-rows = len(arr)
-mat = []
-for i in arr:
-    mat.append(i*'*'.split())
+
+columns,rows, mat = max(arr),len(arr),[]
+[mat.append(i*'*'.split()) for i in arr]
 
 
 mat_Update=[]
-
 for i in range(0,len(mat)):
     temp = mat[i].copy()
     if len(mat[i])==columns:
